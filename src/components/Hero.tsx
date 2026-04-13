@@ -20,7 +20,6 @@ export default function Hero() {
             Empoderando Mulheres em Angola
           </div>
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-gray-900 leading-[1.1] mb-6">
-            Crescer Mulher +: <br />
             <span className="text-ami-purple-primary italic">Transformando</span> vidas através do conhecimento
           </h1>
           <p className="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
