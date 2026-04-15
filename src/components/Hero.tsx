@@ -47,10 +47,15 @@ export default function Hero() {
           
           <div className="mt-12 flex items-center gap-6">
             <div className="flex -space-x-4">
-              {[1, 2, 3, 4].map((i) => (
+              {[
+                '17yhOf21pdVM1wTF3iRZls5sJ_FLi5FB0',
+                '1Chh93wiQhXGG4On4mgWXuMwN4UZsY2e4',
+                '1GncSoEFTnW7jWPFg2fnoy3cxoP68lz_7',
+                '1JHhSbBPzv3Vdk99G6l8__-wfXTvcsYE8'
+              ].map((id) => (
                 <img
-                  key={i}
-                  src={`https://picsum.photos/seed/woman${i}/100/100`}
+                  key={id}
+                  src={`https://lh3.googleusercontent.com/d/${id}`}
                   alt="Membro AMI"
                   className="w-12 h-12 rounded-full border-4 border-white object-cover"
                   referrerPolicy="no-referrer"
@@ -72,7 +77,7 @@ export default function Hero() {
         >
           <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
             <img
-              src="https://picsum.photos/seed/angola-woman/800/1000"
+              src="https://lh3.googleusercontent.com/d/1hgMRc3Vj8zcyezGrpyzOzoHl4m3bu6QM"
               alt="Mulher Inspiradora AMI"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"

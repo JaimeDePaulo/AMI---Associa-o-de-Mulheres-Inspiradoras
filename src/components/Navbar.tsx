@@ -7,6 +7,7 @@ const navLinks = [
   { name: 'Início', href: '#home' },
   { name: 'Quem Somos', href: '#sobre' },
   { name: 'Programas', href: '#programas' },
+  { name: 'Galeria', href: '#galeria' },
   { name: 'Impacto', href: '#impacto' },
   { name: 'Apoiar', href: '#apoiar' },
   { name: 'Eventos', href: '#eventos' },

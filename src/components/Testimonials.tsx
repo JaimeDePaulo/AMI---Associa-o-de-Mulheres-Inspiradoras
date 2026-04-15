@@ -5,20 +5,20 @@ const testimonials = [
   {
     name: 'Maria Antónia',
     role: 'Empreendedora de Moda',
-    content: 'O programa Crescer+ deu-me a estrutura que eu precisava para organizar as minhas finanças. Hoje a minha marca é reconhecida em Luanda.',
-    image: 'https://picsum.photos/seed/woman-t1/200/200'
+    content: 'O programa CUIDAR+ deu-me a estrutura que eu precisava para organizar as minhas finanças. Hoje a minha marca é reconhecida em Luanda.',
+    image: 'https://lh3.googleusercontent.com/d/175S8urbP7sL4jr2HRyYDezIIxMnWqrCc'
   },
   {
     name: 'Isabel dos Santos',
     role: 'Consultora de Marketing',
     content: 'Encontrei na AMI uma rede de apoio que nunca imaginei. A sororidade aqui é real e impulsiona-nos a ir mais longe.',
-    image: 'https://picsum.photos/seed/woman-t2/200/200'
+    image: 'https://lh3.googleusercontent.com/d/175S8urbP7sL4jr2HRyYDezIIxMnWqrCc'
   },
   {
     name: 'Teresa Bento',
     role: 'Fundadora de Startup',
-    content: 'A formação Inspira+ mudou a minha mentalidade. Aprendi que liderar é, acima de tudo, servir e inspirar outras mulheres.',
-    image: 'https://picsum.photos/seed/woman-t3/200/200'
+    content: 'A formação da AMI mudou a minha mentalidade. Aprendi que liderar é, acima de tudo, servir e inspirar outras mulheres.',
+    image: 'https://lh3.googleusercontent.com/d/175S8urbP7sL4jr2HRyYDezIIxMnWqrCc'
   }
 ];
 

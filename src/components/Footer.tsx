@@ -1,4 +1,4 @@
-import { Heart } from 'lucide-react';
+import { Heart, Instagram, Facebook } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -22,8 +22,22 @@ export default function Footer() {
               “Transformando vidas, restaurando sonhos e construindo futuros.”
             </p>
             <div className="flex gap-4">
-              <a href="https://facebook.com/AMI- Associacao Mulheres Inspiradoras" target="_blank" rel="noopener noreferrer" className="text-ami-green-soft hover:text-white transition-colors">Facebook</a>
-              <a href="https://instagram.com/ami_assoc.mulheresinspiradoras" target="_blank" rel="noopener noreferrer" className="text-ami-green-soft hover:text-white transition-colors">Instagram</a>
+              <a 
+                href="https://facebook.com/AMI- Associacao Mulheres Inspiradoras" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-ami-purple-primary transition-all"
+              >
+                <Facebook size={20} />
+              </a>
+              <a 
+                href="https://instagram.com/ami_assoc.mulheresinspiradoras" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-ami-purple-primary transition-all"
+              >
+                <Instagram size={20} />
+              </a>
             </div>
           </div>
 

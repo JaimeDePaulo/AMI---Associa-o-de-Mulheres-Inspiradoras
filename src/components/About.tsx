@@ -15,7 +15,7 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <img
-                  src="https://picsum.photos/seed/ami-1/400/600"
+                  src="https://lh3.googleusercontent.com/d/17yhOf21pdVM1wTF3iRZls5sJ_FLi5FB0"
                   alt="AMI Atividade"
                   className="rounded-3xl w-full aspect-[3/4] object-cover shadow-lg"
                   referrerPolicy="no-referrer"
@@ -31,7 +31,7 @@ export default function About() {
                   <p className="text-sm opacity-80 uppercase tracking-wider">Foco Feminino</p>
                 </div>
                 <img
-                  src="https://picsum.photos/seed/ami-2/400/600"
+                  src="https://lh3.googleusercontent.com/d/1Chh93wiQhXGG4On4mgWXuMwN4UZsY2e4"
                   alt="AMI Atividade"
                   className="rounded-3xl w-full aspect-[3/4] object-cover shadow-lg"
                   referrerPolicy="no-referrer"

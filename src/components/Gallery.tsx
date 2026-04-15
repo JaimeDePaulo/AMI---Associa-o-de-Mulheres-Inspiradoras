@@ -1,50 +1,78 @@
 import { motion } from 'motion/react';
+import { Instagram, Play, Heart, MessageCircle } from 'lucide-react';
 
-const images = [
-  { url: 'https://picsum.photos/seed/ami-g1/800/600', title: 'Workshop Inspira+' },
-  { url: 'https://picsum.photos/seed/ami-g2/600/800', title: 'Mentoria Individual' },
-  { url: 'https://picsum.photos/seed/ami-g3/800/800', title: 'Evento de Networking' },
-  { url: 'https://picsum.photos/seed/ami-g4/800/600', title: 'Formatura Crescer+' },
-  { url: 'https://picsum.photos/seed/ami-g5/600/800', title: 'Feira de Negócios' },
-  { url: 'https://picsum.photos/seed/ami-g6/800/600', title: 'Comunidade AMI' },
+const feedItems = [
+  { url: 'https://lh3.googleusercontent.com/d/1GncSoEFTnW7jWPFg2fnoy3cxoP68lz_7', type: 'image', likes: '124', comments: '12' },
+  { url: 'https://lh3.googleusercontent.com/d/1JHhSbBPzv3Vdk99G6l8__-wfXTvcsYE8', type: 'video', likes: '256', comments: '45' },
+  { url: 'https://lh3.googleusercontent.com/d/1Likk22YsDdB0nrhTPR5ZBAnSw8HsGw7o', type: 'image', likes: '89', comments: '8' },
+  { url: 'https://lh3.googleusercontent.com/d/1R5uB-cG9NssCLTg0naxQmlW9t-6d-nZR', type: 'image', likes: '156', comments: '22' },
+  { url: 'https://lh3.googleusercontent.com/d/1Ut-Dj7FPbYAchA7M2058iR8_5L0fI47j', type: 'video', likes: '432', comments: '67' },
+  { url: 'https://lh3.googleusercontent.com/d/1jG_j-jnGg7vxrEf3xURQwLJJbpPIdbqr', type: 'image', likes: '112', comments: '15' },
 ];
 
 export default function Gallery() {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section id="galeria" className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-6 text-center md:text-left">
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">Nossa <span className="text-ami-purple-primary italic">Jornada</span> em Imagens</h2>
+            <div className="inline-flex items-center gap-2 text-ami-purple-primary font-bold uppercase tracking-widest text-sm mb-4">
+              <Instagram size={20} />
+              <span>Siga-nos no Instagram</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">Nossa Comunidade <span className="text-ami-purple-primary italic">Digital</span></h2>
             <p className="text-gray-600">
-              Momentos marcantes de nossas formações, eventos e a união que fortalece a mulher angolana.
+              Acompanhe o dia a dia da AMI, nossos eventos e histórias de superação em tempo real.
             </p>
           </div>
-          <button className="btn-outline">Ver Galeria Completa</button>
+          <a 
+            href="https://instagram.com/ami_assoc.mulheresinspiradoras" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-primary flex items-center gap-2"
+          >
+            @ami_assoc.mulheresinspiradoras
+          </a>
         </div>
 
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-          {images.map((img, i) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {feedItems.map((item, i) => (
             <motion.div
-              key={img.url}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              key={item.url}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="relative group overflow-hidden rounded-[2rem] cursor-pointer"
+              className="relative aspect-square group overflow-hidden rounded-2xl cursor-pointer bg-gray-100"
             >
               <img
-                src={img.url}
-                alt={img.title}
-                className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
+                src={item.url}
+                alt="Instagram post"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute inset-0 bg-ami-purple-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <p className="text-white font-serif font-bold text-xl">{img.title}</p>
+              
+              {item.type === 'video' && (
+                <div className="absolute top-4 right-4 text-white drop-shadow-lg">
+                  <Play size={24} fill="currentColor" />
+                </div>
+              )}
+
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-6 text-white">
+                <div className="flex items-center gap-2">
+                  <Heart size={20} fill="currentColor" />
+                  <span className="font-bold">{item.likes}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <MessageCircle size={20} fill="currentColor" />
+                  <span className="font-bold">{item.comments}</span>
+                </div>
               </div>
             </motion.div>
           ))}
         </div>
+        
+        
       </div>
     </section>
   );
