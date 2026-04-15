@@ -10,6 +10,7 @@ import Programs from '@/src/components/Programs';
 import Impact from '@/src/components/Impact';
 import Testimonials from '@/src/components/Testimonials';
 import Gallery from '@/src/components/Gallery';
+import Support from '@/src/components/Support';
 import Contact from '@/src/components/Contact';
 import Footer from '@/src/components/Footer';
 import WhatsAppButton from '@/src/components/WhatsAppButton';
@@ -40,6 +41,7 @@ export default function App() {
         <Impact />
         <Testimonials />
         <Gallery />
+        <Support />
         <Contact />
       </main>
 

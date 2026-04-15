@@ -4,34 +4,28 @@ import { cn } from '@/src/lib/utils';
 
 const programs = [
   {
-    id: 'inspira',
-    title: 'Inspira+',
-    subtitle: 'Desenvolvimento Pessoal e Liderança',
-    description: 'Focado em fortalecer a mentalidade empreendedora e as habilidades de liderança da mulher angolana.',
+    id: 'cuidar',
+    title: 'CUIDAR+ AMI',
+    subtitle: 'Um programa completo para transformar vidas',
+    description: 'Criado para apoiar mulheres que desejam recomeçar, fortalecer-se e construir uma vida com mais equilíbrio, dignidade e propósito. Com duração de 5 meses e encontros semanais.',
     icon: <Sparkles className="text-ami-purple-primary" size={32} />,
-    benefits: [
-      'Mentalidade Empreendedora',
-      'Liderança Feminina',
-      'Inteligência Emocional',
-      'Networking Estratégico'
+    areas: [
+      { title: 'Apoio Espiritual', desc: 'Fortalecer a fé e encontrar direção' },
+      { title: 'Apoio Emocional', desc: 'Reconhecer emoções e curar feridas' },
+      { title: 'Experiência de Vida', desc: 'Partilhas e situações reais' },
+      { title: 'Apoio Jurídico', desc: 'Conhecer direitos e proteger-se' },
+      { title: 'Gestão de Negócios', desc: 'Renda e autonomia' }
+    ],
+    health: [
+      'Consultas de ginecologia',
+      'Planeamento familiar',
+      'Consulta pré-natal',
+      'Consultas de psicologia',
+      'Doação de preservativos',
+      'Distribuição de pílulas'
     ],
     color: 'bg-ami-purple-light/10',
     borderColor: 'border-ami-purple-light/30'
-  },
-  {
-    id: 'crescer',
-    title: 'Crescer+',
-    subtitle: 'Criação e Gestão de Negócios',
-    description: 'Capacitação técnica para transformar ideias em negócios sustentáveis e lucrativos.',
-    icon: <TrendingUp className="text-ami-green-dark" size={32} />,
-    benefits: [
-      'Plano de Negócios',
-      'Gestão Financeira',
-      'Marketing e Vendas',
-      'Escalabilidade'
-    ],
-    color: 'bg-ami-green-soft/10',
-    borderColor: 'border-ami-green-soft/30'
   }
 ];
 
@@ -57,7 +51,7 @@ export default function Programs() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl font-serif font-bold mt-4 mb-6"
           >
-            Caminhos para a sua <span className="text-ami-green-dark italic">Evolução</span>
+            Programa <span className="text-ami-green-dark italic">CUIDAR+</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -66,12 +60,11 @@ export default function Programs() {
             transition={{ delay: 0.2 }}
             className="text-gray-600 max-w-2xl mx-auto"
           >
-            Oferecemos trilhas de aprendizado desenhadas especificamente para os desafios 
-            e oportunidades da mulher empreendedora em Angola.
+            Cuidamos da mulher de forma integral, trabalhando áreas essenciais para o seu florescimento.
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="max-w-4xl mx-auto">
           {programs.map((program, index) => (
             <motion.div
               key={program.id}
@@ -85,31 +78,55 @@ export default function Programs() {
                 program.borderColor
               )}
             >
-              <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform">
-                {program.icon}
-              </div>
-              <h3 className="text-3xl font-serif font-bold mb-2">{program.title}</h3>
-              <p className="text-ami-purple-primary font-semibold mb-6">{program.subtitle}</p>
-              <p className="text-gray-600 mb-8 leading-relaxed">
-                {program.description}
-              </p>
-              
-              <div className="space-y-4 mb-10">
-                {program.benefits.map((benefit) => (
-                  <div key={benefit} className="flex items-center gap-3">
-                    <CheckCircle2 size={20} className="text-ami-green-dark" />
-                    <span className="text-gray-700 font-medium">{benefit}</span>
+              <div className="flex flex-col md:flex-row gap-8 items-start">
+                <div className="flex-1">
+                  <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform">
+                    {program.icon}
                   </div>
-                ))}
+                  <h3 className="text-3xl font-serif font-bold mb-2">{program.title}</h3>
+                  <p className="text-ami-purple-primary font-semibold mb-6">{program.subtitle}</p>
+                  <p className="text-gray-600 mb-8 leading-relaxed">
+                    {program.description}
+                  </p>
+                  
+                  <h4 className="font-bold text-xl mb-4">5 Áreas Essenciais:</h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+                    {program.areas.map((area) => (
+                      <div key={area.title} className="flex items-start gap-3">
+                        <CheckCircle2 size={20} className="text-ami-green-dark mt-1 shrink-0" />
+                        <div>
+                          <p className="font-bold text-gray-800 text-sm">{area.title}</p>
+                          <p className="text-gray-500 text-xs">{area.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex-1 bg-white/50 p-6 rounded-2xl border border-white">
+                  <h4 className="font-bold text-xl mb-4">Saúde e Prevenção:</h4>
+                  <ul className="space-y-3 mb-8">
+                    {program.health.map((item) => (
+                      <li key={item} className="flex items-center gap-2 text-sm text-gray-700">
+                        <span className="w-1.5 h-1.5 bg-ami-purple-vibrant rounded-full" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="bg-ami-purple-primary/5 p-4 rounded-xl border border-ami-purple-primary/10">
+                    <p className="text-xs text-ami-purple-primary font-bold uppercase mb-2">Ao final do programa:</p>
+                    <p className="text-sm text-gray-700">✔ Certificado de participação</p>
+                    <p className="text-sm text-gray-700">✔ Brinde especial de transformação</p>
+                  </div>
+                </div>
               </div>
               
               <a 
-                href="https://wa.me/244937632348" 
+                href="https://wa.me/244952567577" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={cn(
-                  "w-full py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2",
-                  program.id === 'inspira' ? "btn-primary" : "btn-secondary"
+                  "w-full mt-10 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 btn-primary"
                 )}
               >
                 Quero Participar

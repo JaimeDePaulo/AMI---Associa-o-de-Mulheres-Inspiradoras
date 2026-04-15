@@ -8,6 +8,7 @@ const navLinks = [
   { name: 'Quem Somos', href: '#sobre' },
   { name: 'Programas', href: '#programas' },
   { name: 'Impacto', href: '#impacto' },
+  { name: 'Apoiar', href: '#apoiar' },
   { name: 'Eventos', href: '#eventos' },
   { name: 'Blog', href: '#blog' },
   { name: 'Contato', href: '#contato' },
@@ -56,7 +57,7 @@ export default function Navbar() {
             </a>
           ))}
           <a 
-            href="https://wa.me/244937632348" 
+            href="https://wa.me/244952567577" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn-primary text-sm py-2 px-6"
@@ -95,7 +96,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a 
-                href="https://wa.me/244937632348" 
+                href="https://wa.me/244952567577" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn-primary w-full mt-4 text-center"

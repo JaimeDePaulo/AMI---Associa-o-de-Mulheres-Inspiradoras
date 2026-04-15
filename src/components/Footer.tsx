@@ -17,11 +17,13 @@ export default function Footer() {
               <span className="font-serif font-bold text-2xl">AMI</span>
             </div>
             <p className="text-ami-green-soft max-w-md mb-8 leading-relaxed">
-              A Associação de Mulheres Inspiradoras é uma organização sem fins lucrativos 
+              A AMI (Associação de Mulheres Inspiradoras) é uma organização sem fins lucrativos 
               comprometida com o desenvolvimento sustentável e o empoderamento feminino em Angola.
+              “Transformando vidas, restaurando sonhos e construindo futuros.”
             </p>
             <div className="flex gap-4">
-              {/* Social icons would go here */}
+              <a href="https://facebook.com/AMI- Associacao Mulheres Inspiradoras" target="_blank" rel="noopener noreferrer" className="text-ami-green-soft hover:text-white transition-colors">Facebook</a>
+              <a href="https://instagram.com/ami_assoc.mulheresinspiradoras" target="_blank" rel="noopener noreferrer" className="text-ami-green-soft hover:text-white transition-colors">Instagram</a>
             </div>
           </div>
 
@@ -31,7 +33,7 @@ export default function Footer() {
               <li><a href="#home" className="hover:text-white transition-colors">Início</a></li>
               <li><a href="#sobre" className="hover:text-white transition-colors">Quem Somos</a></li>
               <li><a href="#programas" className="hover:text-white transition-colors">Programas</a></li>
-              <li><a href="#impacto" className="hover:text-white transition-colors">Impacto</a></li>
+              <li><a href="#apoiar" className="hover:text-white transition-colors">Apoiar</a></li>
               <li><a href="#contato" className="hover:text-white transition-colors">Contato</a></li>
             </ul>
           </div>

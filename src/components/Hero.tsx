@@ -20,7 +20,7 @@ export default function Hero() {
             Empoderando Mulheres em Angola
           </div>
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-gray-900 leading-[1.1] mb-6">
-            <span className="text-ami-purple-primary italic">Transformando</span> vidas através do conhecimento
+            <span className="text-ami-purple-primary italic">Transformando</span> vidas, restaurando sonhos e construindo futuros.
           </h1>
           <p className="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
             A AMI é uma comunidade vibrante dedicada a capacitar mulheres angolanas, 
@@ -28,7 +28,7 @@ export default function Hero() {
           </p>
           <div className="flex flex-wrap gap-4">
             <a 
-              href="https://wa.me/244937632348" 
+              href="https://wa.me/244952567577" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-primary flex items-center gap-2"
@@ -36,7 +36,7 @@ export default function Hero() {
               Inscreva-se <ArrowRight size={18} />
             </a>
             <a 
-              href="https://wa.me/244937632348" 
+              href="https://wa.me/244952567577" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-outline flex items-center gap-2"

@@ -34,7 +34,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400 uppercase tracking-widest font-bold">Telefone</p>
-                  <p className="text-xl font-medium text-gray-800">+244 937 632 348</p>
+                  <p className="text-xl font-medium text-gray-800">+244 943 118 548</p>
                 </div>
               </div>
 
@@ -44,21 +44,34 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400 uppercase tracking-widest font-bold">Localização</p>
-                  <p className="text-xl font-medium text-gray-800">Luanda, Angola</p>
+                  <p className="text-xl font-medium text-gray-800">Bairro do Comandante Cow Boy, Lubango, Angola</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-12 flex gap-4">
-              {[Instagram, Facebook, Linkedin].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-ami-purple-primary hover:shadow-lg transition-all"
-                >
-                  <Icon size={20} />
-                </a>
-              ))}
+              <a
+                href="https://instagram.com/ami_assoc.mulheresinspiradoras"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-ami-purple-primary hover:shadow-lg transition-all"
+              >
+                <Instagram size={20} />
+              </a>
+              <a
+                href="https://facebook.com/AMI- Associacao Mulheres Inspiradoras"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-ami-purple-primary hover:shadow-lg transition-all"
+              >
+                <Facebook size={20} />
+              </a>
+              <a
+                href="#"
+                className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-ami-purple-primary hover:shadow-lg transition-all"
+              >
+                <Linkedin size={20} />
+              </a>
             </div>
           </motion.div>
 

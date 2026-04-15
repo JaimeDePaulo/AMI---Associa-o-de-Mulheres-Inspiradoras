@@ -53,10 +53,8 @@ export default function About() {
               Unidas para <span className="text-ami-purple-primary italic">Inspirar</span> e Transformar
             </h2>
             <p className="text-gray-600 mb-8 leading-relaxed text-lg">
-              A AMI nasceu da necessidade de criar um espaço seguro e capacitador para mulheres em Angola. 
-              Acreditamos que quando uma mulher cresce, toda a comunidade evolui. Nossa missão é 
-              proporcionar as ferramentas necessárias para que cada mulher alcance sua autonomia 
-              financeira e liderança pessoal.
+              A AMI (Associação de Mulheres Inspiradoras) nasceu da necessidade de criar um espaço seguro e capacitador para mulheres em Angola. 
+              Acreditamos que quando uma mulher cresce, toda a comunidade evolui.
             </p>
 
             <div className="space-y-6">
@@ -66,7 +64,7 @@ export default function About() {
                 </div>
                 <div>
                   <h4 className="font-bold text-xl mb-1">Missão</h4>
-                  <p className="text-gray-500">Capacitar mulheres através de formação contínua e networking estratégico.</p>
+                  <p className="text-gray-500">Promover o empoderamento feminino, capacitando mulheres para alcançarem independência financeira, equilíbrio emocional e fortalecimento espiritual, através da formação, apoio e desenvolvimento de oportunidades sustentáveis.</p>
                 </div>
               </div>
               <div className="flex gap-4">
@@ -75,7 +73,7 @@ export default function About() {
                 </div>
                 <div>
                   <h4 className="font-bold text-xl mb-1">Visão</h4>
-                  <p className="text-gray-500">Ser a maior rede de referência em empreendedorismo feminino em Angola até 2030.</p>
+                  <p className="text-gray-500">Ser uma referência em Angola na transformação de vidas de mulheres, criando uma comunidade onde cada mulher tenha autonomia, dignidade, propósito e capacidade de construir um futuro melhor para si e para a sua família.</p>
                 </div>
               </div>
               <div className="flex gap-4">
@@ -84,7 +82,15 @@ export default function About() {
                 </div>
                 <div>
                   <h4 className="font-bold text-xl mb-1">Valores</h4>
-                  <p className="text-gray-500">Sororidade, Transparência, Excelência e Impacto Social.</p>
+                  <div className="text-gray-500 text-sm grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <p><strong>1. Fé:</strong> Deus no centro de tudo.</p>
+                    <p><strong>2. Solidariedade:</strong> Empatia e apoio mútuo.</p>
+                    <p><strong>3. Transformação:</strong> Recomeçar e reconstruir.</p>
+                    <p><strong>4. Autonomia:</strong> Independência integral.</p>
+                    <p><strong>5. Conhecimento:</strong> Educação como libertação.</p>
+                    <p><strong>6. Justiça:</strong> Direitos e igualdade.</p>
+                    <p><strong>7. Dignidade:</strong> Respeito ao valor individual.</p>
+                  </div>
                 </div>
               </div>
             </div>
